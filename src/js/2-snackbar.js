@@ -1,5 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import successIcon from '../public/success.svg';
 
 const form = document.querySelector('.form');
 
@@ -13,7 +14,7 @@ form.addEventListener('submit', event => {
     .then(ms => {
       console.log(`✅ Fulfilled promise in ${ms}ms`);
       iziToast.show({
-        iconUrl: '/success.svg',
+        iconUrl: 'successIcon',
         title: 'OK',
         message: `Fulfilled promise in ${delay} ms`,
         position: 'topCenter',
