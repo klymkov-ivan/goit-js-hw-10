@@ -13,7 +13,7 @@ form.addEventListener('submit', event => {
     .then(ms => {
       console.log(`✅ Fulfilled promise in ${ms}ms`);
       iziToast.show({
-        iconUrl: '../img/success.svg',
+        iconUrl: '/img/success.svg',
         title: 'OK',
         message: `Fulfilled promise in ${delay} ms`,
         position: 'topCenter',
@@ -25,7 +25,7 @@ form.addEventListener('submit', event => {
     .catch(ms => {
       console.log(`❌ Rejected promise in ${ms}ms`);
       iziToast.show({
-        iconUrl: '../img/error.svg',
+        iconUrl: '/img/error.svg',
         title: 'Error',
         message: 'Illegal operation',
         position: 'topCenter',
