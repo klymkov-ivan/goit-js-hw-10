@@ -15,7 +15,7 @@ form.addEventListener('submit', event => {
     .then(ms => {
       console.log(`✅ Fulfilled promise in ${ms}ms`);
       iziToast.show({
-        iconUrl: 'successIcon',
+        iconUrl: successIcon,
         title: 'OK',
         message: `Fulfilled promise in ${delay} ms`,
         position: 'topCenter',
@@ -27,7 +27,7 @@ form.addEventListener('submit', event => {
     .catch(ms => {
       console.log(`❌ Rejected promise in ${ms}ms`);
       iziToast.show({
-        iconUrl: 'errorIcon',
+        iconUrl: errorIcon,
         title: 'Error',
         message: 'Illegal operation',
         position: 'topCenter',
