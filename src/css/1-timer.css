@@ -29,6 +29,8 @@ input {
 
 .timer-wrapper {
   width: 360px;
+  margin-top: 24px;
+  margin-left: 24px;
 }
 
 .timer {
