@@ -133,4 +133,12 @@ input:disabled {
 
 .flatpickr-calendar {
   background-color: #f5f5f5;
+  box-shadow: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flatpickr-months {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
 }
