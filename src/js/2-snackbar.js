@@ -1,6 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import successIcon from '../public/success.svg';
+import successIcon from '../img/success.svg';
+import errorIcon from '../img/error.svg';
 
 const form = document.querySelector('.form');
 
@@ -26,7 +27,7 @@ form.addEventListener('submit', event => {
     .catch(ms => {
       console.log(`❌ Rejected promise in ${ms}ms`);
       iziToast.show({
-        iconUrl: '/error.svg',
+        iconUrl: 'errorIcon',
         title: 'Error',
         message: 'Illegal operation',
         position: 'topCenter',
