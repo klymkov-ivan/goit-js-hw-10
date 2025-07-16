@@ -29,7 +29,7 @@ form.addEventListener('submit', event => {
       iziToast.show({
         iconUrl: errorIcon,
         title: 'Error',
-        message: 'Illegal operation',
+        message: `Rejected promise in ${delay}ms`,
         position: 'topCenter',
         color: '#ef4040',
         messageColor: '#fff',
